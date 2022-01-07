@@ -18,6 +18,8 @@ variable "project" {
   description = "The project to deploy to, if not set the default provider project is used."
 }
 
+variable "gcp_credentials_file" {}
+
 variable "region" {
   description = "Region for cloud resources"
   default     = "us-central1"

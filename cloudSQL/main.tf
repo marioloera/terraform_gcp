@@ -16,6 +16,7 @@
 
  provider "google" {
   version = "~> 2.13"
+  credentials = file(var.gcp_credentials_file)
 }
 
 provider "google-beta" {
